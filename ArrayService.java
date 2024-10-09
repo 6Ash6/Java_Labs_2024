@@ -67,10 +67,9 @@ public class ArrayService {
     }
 
     // Вывод массива на экран
-    public void printArray(Array array) {
-        int[] elements = array.getElements();
+    public void printArray(int[] array) {
         System.out.print("Array elements: ");
-        for (int element : elements) {
+        for (int element : array) {
             System.out.print(element + " ");
         }
         System.out.println();

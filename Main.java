@@ -1,3 +1,4 @@
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,8 +7,7 @@ public class Main {
         ArrayService service = new ArrayService();
 
         System.out.println("Before replacement:");
-        service.printArray(array);
-
+        service.printArray(array.getElements());
 
         int min = service.findMin(array);
         int max = service.findMax(array);
@@ -25,6 +25,44 @@ public class Main {
         System.out.println("Negative count: " + posNegCount[1]);
 
         System.out.println("After replacement:");
-        service.printArray(array);
+        service.printArray(array.getElements());
+
+        //2 task
+        String filePath = "D:\\Java\\Lab1\\src\\input.txt";  // Относительный путь к файлу
+        FileReaderService reader = new FileReaderService();
+        SortingService sorter = new SortingService();
+
+        try {
+            // Чтение и валидация массива из файла
+            int[] array_2 = reader.readArrayFromFile(filePath);
+            System.out.println("Исходный массив:");
+            printArray(array_2);
+
+            // Сортировка массива тремя разными алгоритмами
+            int[] bubbleSortedArray = array_2.clone();
+            sorter.bubbleSort(bubbleSortedArray);
+            System.out.println("После пузырьковой сортировки:");
+            printArray(bubbleSortedArray);
+
+            int[] insertionSortedArray = array_2.clone();
+            sorter.insertionSort(insertionSortedArray);
+            System.out.println("После сортировки выбором:");
+            printArray(insertionSortedArray);
+
+            int[] quickSortedArray = array_2.clone();
+            sorter.quickSort(quickSortedArray, 0, quickSortedArray.length - 1);
+            System.out.println("После быстрой сортировки:");
+            printArray(quickSortedArray);
+
+        } catch (IOException e) {
+            System.err.println("Ошибка: " + e.getClass());
+        }
     }
+        private static void printArray(int[] array) {
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
+
 }
