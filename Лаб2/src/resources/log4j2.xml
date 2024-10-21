@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="logdir">/logs</Property>
+        <Property name="layout">%d [%t] %-5p %c - %m%n</Property>
+    </Properties>
+    
+    <Appenders>
+        <RollingFile name="application_log"
+                     fileName="${logdir}/application_log.log"
+                     filePattern="${logdir}/application_log.%d{yyyy-MM-dd}.log.gz"
+                     ignoreExceptions="false"
+                     append="false">
+            <PatternLayout pattern="${layout}"/>
+        </RollingFile>
+        
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{MM:dd HH:mm:ss.SSS}] [%level] [%logger{36}] - %msg%n"/>
+        </Console>
+    </Appenders>
+    
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="application_log"/>
+        </Root>
+    </Loggers>
+</Configuration>
