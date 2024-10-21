@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tariffs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tariff.xsd">
+    <Tariff id="tariff1">
+        <Name>Супер1</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff2">
+        <Name>Супер2</Name>
+        <OperatorName>МТС</OperatorName>
+        <Payroll>14p</Payroll>
+        <SmsPrice>20p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">12 р</Price>
+            <Price type="outside">18 р</Price>
+            <Price type="home">25 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">2 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff3">
+        <Name>Супер1</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>18p</Payroll>
+        <SmsPrice>17p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">40 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff4">
+        <Name>Супер4</Name>
+        <OperatorName>Life</OperatorName>
+        <Payroll>10p</Payroll>
+        <SmsPrice>5p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">35 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff5">
+        <Name>Супер5</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff6">
+        <Name>Супер6</Name>
+        <OperatorName>МТС</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>20р</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">15 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff7">
+        <Name>Супер7</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">20 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff8">
+        <Name>Супер8</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>10р</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">28 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff9">
+        <Name>Супер9</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">5 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff10">
+        <Name>Супер10</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>60р</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">78 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff11">
+        <Name>Супер1</Name>
+        <OperatorName>Life</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">60 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff12">
+        <Name>Супер1</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>10р</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">60 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff13">
+        <Name>Супер1</Name>
+        <OperatorName>Beeline</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff14">
+        <Name>Супер14</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">100 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff15">
+        <Name>Супер15</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">78 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+    <Tariff id="tariff16">
+        <Name>Супер160</Name>
+        <OperatorName>A1</OperatorName>
+        <Payroll>15p</Payroll>
+        <SmsPrice>16p</SmsPrice>
+        <CallPrice>
+            <Price type="inside">10 р</Price>
+            <Price type="outside">20 р</Price>
+            <Price type="home">30 р</Price>
+        </CallPrice>
+        <Parameters>
+            <Parameter type="favnumber">1 р</Parameter>
+            <Parameter type="tarif">12 c</Parameter>
+            <Parameter type="connect">10 р</Parameter>
+        </Parameters>
+    </Tariff>
+</Tariffs>
