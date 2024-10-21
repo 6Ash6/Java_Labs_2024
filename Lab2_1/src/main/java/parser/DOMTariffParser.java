@@ -57,10 +57,10 @@ public class DOMTariffParser implements TariffParser {
             String name = tariffElement.getElementsByTagName("Name").item(0).getTextContent();
             String operator = tariffElement.getElementsByTagName("OperatorName").item(0).getTextContent();
             String payroll = tariffElement.getElementsByTagName("Payroll").item(0).getTextContent();
-            String smsprice = tariffElement.getElementsByTagName("Smsprice").item(0).getTextContent();
+            String smsprice = tariffElement.getElementsByTagName("SmsPrice").item(0).getTextContent();
 
-            Parameters parameters = getParameters(tariffElement);
             CallPrice callPrice = getCallPrice(tariffElement);
+            Parameters parameters = getParameters(tariffElement);
 
             Tariff tariff = new Tariff(id, name, operator, payroll, smsprice, callPrice, parameters);
             tariffs.add(tariff);
