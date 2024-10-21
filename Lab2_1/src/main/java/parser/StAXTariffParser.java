@@ -24,7 +24,7 @@ public class StAXTariffParser implements TariffParser {
 
     @Override
     public List<Tariff> parse(String filePath) throws FileNotFoundException {
-        List<Tariff> flowers = new ArrayList<>();
+        List<Tariff> tariffs = new ArrayList<>();
         XMLInputFactory factory = XMLInputFactory.newInstance();
         XMLEventReader eventReader;
         try {
@@ -59,9 +59,10 @@ public class StAXTariffParser implements TariffParser {
                     String id = startElement.getAttributeByName(new javax.xml.namespace.QName("id")).getValue();
                     currentTariff = new Tariff(id, "", "", "", "", new CallPrice(), new Parameters());
                     logger.debug("Parsing tariff: {}", currentTariff.getId());
-                } else if ("CallPrice".equals(qName) || "Parameters".equals(qName)) {
+                } else if ("CallPrice".equals(qName) || "Parameter".equals(qName)) {
                     currentType = startElement.getAttributeByName(new javax.xml.namespace.QName("type")).getValue();
                 }
+
             } else if (event.isCharacters()) {
                 currentValue.append(event.asCharacters().getData());
             } else if (event.isEndElement()) {
@@ -70,7 +71,7 @@ public class StAXTariffParser implements TariffParser {
 
                 if ("Tariff".equals(qName)) {
                     if (currentTariff != null) {
-                        flowers.add(currentTariff);
+                        tariffs.add(currentTariff);
                     }
                 } else if ("Name".equals(qName)) {
                     if (currentTariff != null) {
@@ -100,8 +101,8 @@ public class StAXTariffParser implements TariffParser {
             }
         }
 
-        logger.info("Successfully parsed {} flowers", flowers.size());
+        logger.info("Successfully parsed {} tariff", tariffs.size());
 
-        return flowers;
+        return tariffs;
     }
 }
