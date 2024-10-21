@@ -8,7 +8,7 @@
         <CallPrice>
             <Price type="inside">10 р</Price>
             <Price type="outside">20 р</Price>
-            <Price type="home">30 р</Price>
+            <Price type="home">30р</Price>
         </CallPrice>
         <Parameters>
             <Parameter type="favnumber">1 р</Parameter>

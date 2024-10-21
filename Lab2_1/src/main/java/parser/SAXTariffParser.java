@@ -47,9 +47,9 @@ public class SAXTariffParser implements TariffParser {
     private static class TariffHandler extends DefaultHandler {
         private static final String TARIFF_TAG = "Tariff";
         private static final String NAME_TAG = "Name";
-        private static final String OPERATOR_TAG = "Operator";
+        private static final String OPERATOR_TAG = "OperatorName";
         private static final String PAY_ROLL_TAG = "Payroll";
-        private static final String SMS_PRICE_TAG = "Smsprice";
+        private static final String SMS_PRICE_TAG = "SmsPrice";
         private static final String PARAMETERS_TAG = "Parameters";
         private static final String CALL_PRICE_TAG = "CallPrice";
 

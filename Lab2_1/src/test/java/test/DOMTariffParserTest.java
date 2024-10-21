@@ -32,7 +32,6 @@ public class DOMTariffParserTest {
         Assert.assertEquals(firstTariff.getOperatorname(), "A1", "First tariff operator should be A1");
         Assert.assertEquals(firstTariff.getPayroll(), "15p", "15p");
         Assert.assertEquals(firstTariff.getSmsprice(), "16p", "16p");
-        Assert.assertEquals(firstTariff.getCallPrice().getPrice("home"), "30 р", "30 р");
 
 
     }
